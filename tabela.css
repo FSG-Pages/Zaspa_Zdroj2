@@ -1,0 +1,222 @@
+body {
+    background: linear-gradient(0deg, rgba(209,20,212,1) 1%, rgba(209,20,212,1) 40%, rgba(49,116,201,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial Black, sans-serif;
+    margin: 0;
+    color: white;
+   
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+img:hover {
+    
+    transition: color 0.3s ease-in-out;
+}
+
+.tabela {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0px 1px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+}
+
+.tabela th, .tabela td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tabela th {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tabela tr:hover {
+    transform: scale(1.00);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .tabela {
+        font-size: 14px;
+    }
+
+    .tabela th, .tabela td {
+        padding: 10px;
+    }
+}
+
+/* Ogólne ustawienia scrollbara na komputerze (działa w przeglądarkach WebKit) */
+::-webkit-scrollbar {
+    width: 15px; /* Szerokość scrollbara na komputerze */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* Ukrywanie scrollbara na urządzeniach mobilnych */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0; /* Ukrycie scrollbara */
+        height: 0; /* Ukrycie scrollbara w poziomie */
+    }
+
+    /* Ukrycie scrollbara dla przeglądarek obsługujących scrollbar-gutter */
+    body {
+        scrollbar-gutter: stable both-edges;
+    }
+}
+/* Styl dla paska przewijania */
+::-webkit-scrollbar {
+    width: 12px; /* Szerokość scrollbara */
+    background-color:  rgba(0, 0, 0, 0.5); /* Przezroczystość całego scrollbara */
+}
+
+/* Styl dla "kciuka" scrollbara */
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Przezroczystość kciuka */
+    border-radius: 10px; /* Zaokrąglone rogi kciuka */
+    border: 3px solid rgba(0, 0, 0, 0.5); /* Cienkie obramowanie */
+}
+
+/* Styl dla toru scrollbara */
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5); /* Przezroczystość toru */
+    border-radius: 10px; /* Zaokrąglone rogi toru */
+}
+
+#gk{
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(156, 15, 149);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+#def{
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+#mid{
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(190, 202, 12);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+#n{
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 174, 31);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+.players-container {
+    display: flex; /* Używamy flexbox do ustawienia obrazków obok siebie */
+    justify-content: center; /* Opcjonalnie: wyśrodkowuje obrazy w poziomie */
+    align-items: center; /* Opcjonalnie: wyśrodkowuje obrazy w pionie */
+    gap: 10px; /* Opcjonalnie: dodaje odstęp między obrazkami */
+}
+
+.players_container {
+    display: flex;
+    gap: 20px; /* odstęp między divami, można dostosować */
+    margin-bottom: 20px; /* opcjonalnie, odstęp poniżej */
+}
+.players_container div {
+    padding: 10px;
+    background-color: #f0f0f0; /* opcjonalne tło dla lepszej widoczności */
+    border-radius: 5px; /* opcjonalne zaokrąglenie */
+    text-align: center; /* centrowanie tekstu */
+}
+.players_container {
+    display: flex;
+    gap: 20px; /* odstęp między divami */
+    margin-bottom: 20px; /* odstęp poniżej */
+    justify-content: center; /* centrowanie w poziomie */
+}
+
+.players_container div {
+    padding: 10px;
+    background-color: #f0f0f0; /* opcjonalne tło */
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centrowanie tekstu w pionie */
+    justify-content: center; /* Centrowanie tekstu w poziomie */
+    width: 50px;
+    height: 50px;
+}
+
+/* Dodajemy media query dla mniejszych ekranów */
+@media (max-width: 768px) {
+    .players_container {
+        flex-direction: row; /* Ustawienie wierszowe na telefonach */
+        flex-wrap: wrap; /* Pozwól, aby elementy zawijały się w linie */
+    }
+    
+    .players_container div {
+        width: 45px; /* Zmniejszamy szerokość na mniejszych ekranach */
+        height: 45px; /* Zmniejszamy wysokość na mniejszych ekranach */
+    }
+}
+
+/* Dodatkowe media query dla jeszcze mniejszych ekranów */
+@media (max-width: 480px) {
+    .players_container div {
+        width: 40px; /* Jeszcze mniejsze wymiary na bardzo małych ekranach */
+        height: 40px;
+        font-size: 24px; /* Dopasowanie rozmiaru czcionki */
+    }
+}

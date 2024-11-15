@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zaspa.png" type="image/png">
+    <link rel="stylesheet" href="tabela.css">
+    <title>Zaspa Zdrój | Zawodnicy</title>
+    <style>
+        .players_container {
+            display: flex;
+            gap: 20px; /* odstęp między divami, można dostosować */
+            margin-bottom: 20px; /* opcjonalnie, odstęp poniżej */
+        }
+        .players_container div {
+            padding: 10px;
+            background-color: #f0f0f0; /* opcjonalne tło dla lepszej widoczności */
+            border-radius: 5px; /* opcjonalne zaokrąglenie */
+            text-align: center; /* centrowanie tekstu */
+        }
+    </style>
+</head>
+<body>
+    <h1>Zawodnicy</h1>
+    <div class="players_container">
+        <div id="gk">3</div>
+        <div id="def">6</div>
+        <div id="mid">7</div>
+        <div id="n">2</div>
+    </div>
+
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nr.</th>
+                <th>Imię i Nazwisko</th>
+                <th>Pozycja(e)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- BRAMKARZE -->
+            <tr><td>1</td><td>Dariusz K.</td><td>BR</td></tr>
+            <tr><td>18</td><td>Artur Sz.</td><td>BR|ŚP|PP</td></tr>
+            <tr><td>12</td><td>Filip Sz.</td><td>BR</td></tr>
+            
+            <!-- OBROŃCY -->
+            <tr><td>2</td><td>Kacper P.</td><td>ŚO</td></tr>
+            <tr><td>4</td><td>Szymon P.</td><td>ŚO|PO</td></tr>
+            <tr><td>6</td><td>Jakub R.</td><td>ŚO|ŚP</td></tr>
+            <tr><td>13</td><td>Karol D.</td><td>PO|LO|ŚO</td></tr>
+            <tr><td>25</td><td>Paweł C.</td><td>ŚO|PO</td></tr>
+            <tr><td>3</td><td>Maks N.</td><td>ŚP|ŚO</td></tr>
+
+            <!-- POMOCNICY -->
+            <tr><td>14</td><td>Dawid D.</td><td>ŚP|PS</td></tr>
+            <tr><td>14</td><td>Dawid D.</td><td>ŚP|LS</td></tr>
+            <tr><td>15</td><td>Szymon Z.</td><td>ŚPD</td></tr>
+            <tr><td>7</td><td>Jan C.</td><td>LS</td></tr>
+            <tr><td>21</td><td>Igor K.</td><td>PP</td></tr>
+            <tr><td>22</td><td>Jakub G.</td><td>ŚP|PP|LP</td></tr>
+            <tr><td>19</td><td>Jakub J.</td><td>ŚP|ŚPO|LS|N</td></tr>
+            
+            <!-- NAPASTNICY -->
+            <tr><td>9</td><td>Maciej Ż.</td><td>N</td></tr>
+            <tr><td>10</td><td>Kamil M.</td><td>N|LP</td></tr>
+
+            <!-- nwm -->
+            <tr><td>20</td><td>Maksymilian L.</td><td>??</td></tr>
+            <tr><td>32</td><td>Tymon S.</td><td>??</td></tr>
+            <tr><td>24</td><td>Ollwier O.</td><td>??</td></tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

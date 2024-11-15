@@ -1,0 +1,214 @@
+/* Tło strony */
+body {
+    background: linear-gradient(0deg, rgba(209,20,212,1) 1%, rgba(209,20,212,1) 40%, rgba(49,116,201,1) 100%);
+    background-size: cover; /* Zapobiega powtarzaniu się tła */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial Black, sans-serif;
+    margin: 0;
+    color: white;
+}
+#top{
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+/* Nagłówki */
+h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h1:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+img:hover {
+    
+    transition: color 0.3s ease-in-out;
+}
+/* Sekcja z informacjami */
+#infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 60px;
+    box-shadow: 0px 1px 24px 0px rgba(66, 68, 90, 1);
+    padding: 20px;
+    transition: margin-top 0.3s ease;
+    margin-bottom: 50px;
+}
+
+#infos_header_win {
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 135, 56);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+#infos_header_draw {
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(219, 216, 29);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+#infos_header_lose {
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgb(174, 31, 31);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;    /* Wycentrowanie w pionie */
+}
+.logo-container {
+    display: flex; /* Używamy flexbox do ustawienia obrazków obok siebie */
+    justify-content: center; /* Opcjonalnie: wyśrodkowuje obrazy w poziomie */
+    align-items: center; /* Opcjonalnie: wyśrodkowuje obrazy w pionie */
+    gap: 10px; /* Opcjonalnie: dodaje odstęp między obrazkami */
+}
+
+
+#infos_winner {
+    font-size: 25px;
+    font-weight: bolder;
+    color: hsl(0, 0%, 0%);
+    text-decoration: underline;
+}
+
+
+#infos_team2_w {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(50, 160, 2);
+}
+#infos_team2_d {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(255, 234, 0);
+}
+#infos_team2_l {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+
+#infos_team2 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+#infos_another {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(73, 71, 71);
+}
+
+/* Dostosowanie sekcji dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    #infos {
+        width: 80%; /* Ustaw szerokość na 80% ekranu */
+        height: auto; /* Dostosuj wysokość do treści */
+        padding: 15px; /* Dopasuj padding, jeśli potrzebne */
+    }
+}
+
+/* Styl dla paska przewijania */
+::-webkit-scrollbar {
+    width: 12px; /* Szerokość scrollbara */
+    background-color:  rgba(0, 0, 0, 0.5); /* Przezroczystość całego scrollbara */
+}
+
+/* Styl dla "kciuka" scrollbara */
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Przezroczystość kciuka */
+    border-radius: 10px; /* Zaokrąglone rogi kciuka */
+    border: 3px solid rgba(0, 0, 0, 0.5); /* Cienkie obramowanie */
+}
+
+/* Styl dla toru scrollbara */
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5); /* Przezroczystość toru */
+    border-radius: 10px; /* Zaokrąglone rogi toru */
+}
+/* Responsywność dla sekcji wyników meczów */
+#infos {
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px auto; /* Centrowanie i odstęp między sekcjami */
+    box-shadow: 0px 1px 24px 0px rgba(66, 68, 90, 1);
+    background-color: rgba(255, 255, 255, 0.1); /* Przezroczystość tła */
+    transition: margin-top 0.3s ease;
+    text-align: center;
+}
+
+#infos_header_win,
+#infos_header_draw,
+#infos_header_lose {
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#infos_header_win {
+    background-color: rgb(25, 135, 56); /* Zielony dla wygranej */
+}
+
+#infos_header_draw {
+    background-color: rgb(219, 216, 29); /* Żółty dla remisu */
+}
+
+#infos_header_lose {
+    background-color: rgb(174, 31, 31); /* Czerwony dla przegranej */
+}
+
+/* Responsywność dla sekcji wyników meczów na urządzeniach mobilnych */
+@media (max-width: 768px) {
+    #infos {
+        width: 90%; /* Szerokość na urządzeniach mobilnych */
+        padding: 15px;
+    }
+    #infos_header_win,
+    #infos_header_draw,
+    #infos_header_lose {
+        font-size: 28px; /* Zmniejszenie rozmiaru tekstu w małych nagłówkach */
+        width: 45px; /* Mniejsze wymiary nagłówków */
+        height: 45px;
+    }
+}
