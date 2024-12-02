@@ -95,7 +95,6 @@ img:hover {
     justify-content: center; /* Opcjonalnie: wyśrodkowuje obrazy w poziomie */
     align-items: center; /* Opcjonalnie: wyśrodkowuje obrazy w pionie */
     gap: 10px; /* Opcjonalnie: dodaje odstęp między obrazkami */
-    border: 5px ;
 }
 
 
@@ -202,7 +201,7 @@ img:hover {
 /* Responsywność dla sekcji wyników meczów na urządzeniach mobilnych */
 @media (max-width: 768px) {
     #infos {
-        width: 60%; /* Szerokość na urządzeniach mobilnych */
+        width: 90%; /* Szerokość na urządzeniach mobilnych */
         padding: 15px;
     }
     #infos_header_win,
@@ -211,59 +210,5 @@ img:hover {
         font-size: 28px; /* Zmniejszenie rozmiaru tekstu w małych nagłówkach */
         width: 45px; /* Mniejsze wymiary nagłówków */
         height: 45px;
-    }
-}
-
-
-/* Style dla obrazków w kontenerze logo */
-#infos .logo-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Obrazki zawijają się w wiersze */
-}
-
-#infos .logo-container img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-/* Stylowanie nagłówków wewnątrz #infos */
-#infos h1 {
-    font-size: 1.2rem;
-    margin: 5px 0;
-}
-
-/* Responsywność dla małych ekranów */
-@media (max-width: 768px) {
-    #infos {
-        flex-direction: column; /* Upewnij się, że wszystko układa się w kolumnie */
-        padding: 15px;
-    }
-
-    #infos h1 {
-        font-size: 1rem; /* Zmniejsz czcionki */
-    }
-
-    #infos .logo-container img {
-        width: 60px; /* Mniejsze obrazki */
-        height: 60px;
-    }
-}
-
-/* Responsywność dla bardzo małych ekranów */
-@media (max-width: 480px) {
-    #infos {
-        padding: 10px;
-    }
-
-    #infos h1 {
-        font-size: 0.9rem;
-    }
-
-    #infos .logo-container img {
-        width: 50px;
-        height: 50px;
     }
 }
